@@ -1,0 +1,235 @@
+<!-- Default.aspx -->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI SCADA CIM - Создание интеллектуальных схем</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .logo {
+            font-size: 2.5em;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: #2d3748;
+            font-size: 2.8em;
+            margin-bottom: 15px;
+        }
+        
+        .tagline {
+            color: #4a5568;
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .section {
+            padding: 40px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        h2 {
+            color: #2d3748;
+            font-size: 2em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        h2 i {
+            color: #667eea;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        
+        .contact-form {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px;
+            border-radius: 20px;
+            color: white;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            background: rgba(255,255,255,0.9);
+        }
+        
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        .btn {
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            font-weight: bold;
+        }
+        
+        .btn:hover {
+            background: #ff5252;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #4a5568;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+                margin: 15px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">NCtronic AI</div>
+            <h1>Создание графических SCADA-схем в области электроэнергетики с помощью ИИ</h1>
+            <p class="tagline">Инновационная платформа для автоматизированного проектирования схем в формате Общей информационной модели с использованием систем искусственного интеллекта</p>
+        </header>
+        
+        <section class="section">
+            <h2>📊 О проекте</h2>
+            <p>Наш проект представляет собой революционное решение для автоматизации создания SCADA-схем в формате CIM (Common Information Model). Используя передовые алгоритмы искусственного интеллекта, мы преобразуем исходные схемы на разных носителях в оптимизированные графические схемы, которые позже загружаются в модель.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>🤖 ИИ-Генерация</h3>
+                    <p>Автоматическое создание графических схем с помощью нейросетей</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔗 CIM Стандарт</h3>
+                    <p>Полная совместимость с IEC 61970/61968 - международным стандартом для энергетических систем</p>
+                </div>
+                <div class="feature-card">
+                    <h3>⚡ Оптимизация</h3>
+                    <p>Интеллектуальная оптимизация размещения элементов и маршрутизации соединений</p>
+                </div>
+            </div>
+        </section>
+        
+            <section class="section">
+    <h2>📝 Форма обратной связи</h2>
+   <!-- Замените форму на эту версию для GitHub Pages -->
+<form id="contactForm" action="https://formspree.io/f/ваш-уникальный-id" method="POST">
+    <div class="form-group">
+        <input type="text" name="name" placeholder="Ваше имя" required>
+    </div>
+    <div class="form-group">
+        <input type="email" name="_replyto" placeholder="Ваш email" required>
+    </div>
+    <div class="form-group">
+        <input type="text" name="company" placeholder="Компания">
+    </div>
+    <div class="form-group">
+        <textarea name="message" placeholder="Ваше сообщение..." required></textarea>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn">Отправить сообщение</button>
+    </div>
+    <!-- Скрытые поля для Formspree -->
+    <input type="hidden" name="_subject" value="Новое сообщение с сайта AI SCADA CIM">
+    <input type="text" name="_gotcha" style="display:none">
+</form>
+</script>
+</body>
+</html>
